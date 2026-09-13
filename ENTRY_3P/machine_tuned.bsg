@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Besiege machine save file.-->
+<Machine version="1" bsgVersion="1.4" name="machine_tuned_3P_142309">
+    <!--The machine's position and rotation.-->
+    <Global>
+        <Position x="0" y="5" z="0" />
+        <Rotation x="0" y="0" z="0" w="1" />
+    </Global>
+    <!--The machine's additional data or modded data.-->
+    <Data>
+        <StringArray key="requiredMods">1d45bae7-50b4-4137-963e-27e45f6ece74~W~3757318625~1.0.0~BuildArena Block Tracker</StringArray>
+        <Boolean key="tracker.enabled">True</Boolean>
+        <Single key="tracker.sample_rate_hz">10</Single>
+        <String key="tracker.target_guids">78a5b761-49c0-49b0-ba39-0c23a1ea12f7</String>
+        <String key="tracker.output_basename">MinimumCostOrbitalOpposedPair_260910_000944</String>
+    </Data>
+    <!--The machine's blocks.-->
+    <Blocks>
+        <Block id="0" guid="78a5b761-49c0-49b0-ba39-0c23a1ea12f7">
+            <Transform>
+                <Position x="0" y="0" z="0" />
+                <Rotation x="0" y="0" z="0" w="1" />
+                <Scale x="1" y="1" z="1" />
+            </Transform>
+            <Data>
+                <Integer key="bmt-version">0</Integer>
+            </Data>
+        </Block>
+        <Block id="91" guid="11c29d83-9fad-49dc-8f25-a6245790938d">
+            <Transform>
+                <Position x="0.5" y="0" z="0" />
+                <Rotation x="0" y="0.7071068" z="0" w="0.7071068" />
+                <Scale x="1" y="1" z="1" />
+            </Transform>
+            <Data>
+                <StringArray key="bmt-left">
+                    <String>E</String>
+                    <String>M3</String>
+                </StringArray>
+                <StringArray key="bmt-right">
+                    <String>Q</String>
+                    <String>M4</String>
+                </StringArray>
+                <Boolean key="bmt-auto-brake">True</Boolean>
+                <Boolean key="bmt-toggle-mode">False</Boolean>
+                <Single key="bmt-fthrust">3</Single>
+                <Boolean key="flipped">False</Boolean>
+            </Data>
+        </Block>
+        <Block id="91" guid="e6fec973-29d0-4b75-82a3-381a4ab6dd4d">
+            <Transform>
+                <Position x="-0.5" y="0" z="0" />
+                <Rotation x="0" y="0.7071068" z="0" w="-0.7071068" />
+                <Scale x="1" y="1" z="1" />
+            </Transform>
+            <Data>
+                <StringArray key="bmt-left">
+                    <String>Q</String>
+                    <String>M3</String>
+                </StringArray>
+                <StringArray key="bmt-right">
+                    <String>E</String>
+                    <String>M4</String>
+                </StringArray>
+                <Boolean key="bmt-auto-brake">True</Boolean>
+                <Boolean key="bmt-toggle-mode">False</Boolean>
+                <Single key="bmt-fthrust">3</Single>
+                <Boolean key="flipped">False</Boolean>
+            </Data>
+        </Block>
+    </Blocks>
+</Machine>

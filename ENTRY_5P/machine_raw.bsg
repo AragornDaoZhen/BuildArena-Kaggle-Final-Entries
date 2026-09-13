@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Machine version="1" bsgVersion="1.4" name="Minimal Orbital Thrustcraft_260909_230621">
+    <Global>
+        <Position x="0" y="5" z="0" />
+        <Rotation x="0" y="0" z="0" w="1" />
+    </Global>
+    <Data>
+        <StringArray key="requiredMods">1d45bae7-50b4-4137-963e-27e45f6ece74~L~1.0.0~BuildArena Block Tracker</StringArray>
+        <Boolean key="tracker.enabled">True</Boolean>
+        <Single key="tracker.sample_rate_hz">10.0</Single>
+        <String key="tracker.target_guids">23658da8-233b-4b62-9d1d-336fb653ecb5</String>
+        <String key="tracker.output_basename">Minimal Orbital Thrustcraft_260909_230621</String>
+    </Data>
+    <Blocks>
+        <Block id="0" guid="23658da8-233b-4b62-9d1d-336fb653ecb5">
+            <Transform>
+                <Position x="0.0" y="0.0" z="0.0" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data />
+        </Block>
+        <Block id="91" guid="165ad352-6dff-48eb-a741-fbd751819237">
+            <Transform>
+                <Position x="0.5" y="0.0" z="0.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data />
+        </Block>
+        <Block id="91" guid="da0bf654-2811-412e-8fa7-57b8f816cb43">
+            <Transform>
+                <Position x="-0.5" y="0.0" z="0.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data />
+        </Block>
+        <Block id="91" guid="303637d8-db2b-4e00-a346-18f3c6248654">
+            <Transform>
+                <Position x="0.0" y="0.0" z="0.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data />
+        </Block>
+        <Block id="91" guid="2f3e68c9-d7f6-40fe-9805-5dbb01fb542b">
+            <Transform>
+                <Position x="0.0" y="0.0" z="-0.5" />
+                <Rotation x="-1.0" y="-0.0" z="-0.0" w="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data />
+        </Block>
+    </Blocks>
+</Machine>

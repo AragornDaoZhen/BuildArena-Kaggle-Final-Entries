@@ -1,0 +1,110 @@
+[
+  {
+    "op": "list_block_categories",
+    "params": {},
+    "result": "Available block categories (8):\n- Category: armour; Enabled: True; Summary: Protective and structural covering modules used to shield, reinforce, shape, or decorate a machine.\n- Category: basic; Enabled: True; Summary: General-purpose building blocks and simple connectors that form the core frame or baseline structure.\n- Category: flight; Enabled: True; Summary: Atmospheric lift and air-control modules used for planes, gliders, fans, balloons, and aerodynamic steering.\n- Category: locomotion; Enabled: True; Summary: Ground movement modules such as wheels, tracks, rolling supports, and parts that help a machine travel or steer.\n- Category: mechanical; Enabled: True; Summary: Mechanical joints, actuators, couplers, and motion-transfer modules used to articulate or transform builds.\n- Category: space-flight; Enabled: True; Summary: Rocket, fuel, and space-oriented control modules used for thrust, fuel routing, and high-energy flight systems.\n- Category: water; Enabled: True; Summary: Nautical modules for buoyancy, water propulsion, steering, sails, paddles, and marine weaponry.\n- Category: weaponry; Enabled: True; Summary: Offensive modules that damage, ignite, launch projectiles, grab targets, drill, cut, or otherwise attack."
+  },
+  {
+    "op": "list_blocks_by_category",
+    "params": {
+      "category": "space-flight"
+    },
+    "result": "Category 'space-flight' blocks (12):\n- Category: space-flight; Block: Booster; Summary: Compact fuel-burning rocket engine.\n- Category: space-flight; Block: Fuel Barrel; Summary: Small cubic fuel tank.\n- Category: space-flight; Block: Fuel Barrel Big; Summary: Large 3x3x3 fuel tank.\n- Category: space-flight; Block: Fuel Cannon; Summary: Fuel-consuming repeating fireball cannon.\n- Category: space-flight; Block: Fuel Coupler; Summary: Fuel-flow grabber coupler.\n- Category: space-flight; Block: Fuel Line; Summary: Controllable fuel-transfer connector.\n- Category: space-flight; Block: Grid Fin; Summary: Foldable grid-fin stabilizer.\n- Category: space-flight; Block: Parachute; Summary: Compact deployable parachute pack.\n- Category: space-flight; Block: Reaction Steering Block; Summary: Powered reaction-wheel attitude-control module.\n- Category: space-flight; Block: Space Wheel; Summary: Powered metal rover wheel.\n- Category: space-flight; Block: Steering Fin; Summary: Rotating trapezoid aerodynamic steering fin.\n- Category: space-flight; Block: Steering Thruster; Summary: Fuel-free paired RCS attitude thruster."
+  },
+  {
+    "op": "list_blocks_by_category",
+    "params": {
+      "category": "mechanical"
+    },
+    "result": "Category 'mechanical' blocks (12):\n- Category: mechanical; Block: Axle; Summary: Constant-velocity universal joint module.\n- Category: mechanical; Block: Ball Joint; Summary: Frictionless ball-joint foot on a 1\u00d71\u00d71 cube; no torque transfer.\n- Category: mechanical; Block: Decoupler; Summary: Decoupler.\n- Category: mechanical; Block: Grabber; Summary: Automatic grab module.\n- Category: mechanical; Block: Hinge; Summary: Passive free hinge.\n- Category: mechanical; Block: Piston; Summary: Piston module.\n- Category: mechanical; Block: Rope Winch; Summary: Connector rope winch: inextensible line between two anchors.\n- Category: mechanical; Block: Slider; Summary: Passive linear slider.\n- Category: mechanical; Block: Spinning Block; Summary: Powered rotation module.\n- Category: mechanical; Block: Spring; Summary: Spring rope (connector).\n- Category: mechanical; Block: Suspension; Summary: Suspension strut.\n- Category: mechanical; Block: Swivel; Summary: Swivel joint module."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Steering Thruster"
+    },
+    "result": "Block Name: Steering Thruster\nDescription: An RCS thruster module about 1.4 units wide, with two small side nozzles pointing in opposite directions. Each nozzle can produce thrust equivalent to about 0.4 units of mass under normal gravity. By default it automatically stabilizes the machine body, has no attachable faces, and does not consume fuel."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Reaction Steering Block"
+    },
+    "result": "Block Name: Reaction Steering Block\nDescription: A powered metal flywheel with mass 0.25, rotation radius 0.7, and thickness 0.7. It changes mechanical attitude by generating angular momentum through wheel rotation, and by default automatically compensates for attitude instability. It has no attachable faces."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Booster"
+    },
+    "result": "Block Name: Booster\nDescription: A 1x1x1 rocket engine with mass 1. The four side-face centers are attachable fuel-supply connection points, and the engine can also receive fuel when mounted directly on a fuel supply. It starts with 1 unit of fuel, consumes fuel while running, and produces thrust equivalent to about 24 units of mass under normal gravity."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Starting Block is the structural core. Raw geometry uses the smallest bilateral pair of fuel-free Steering Thrusters."
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: f0, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f1, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: f3, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: f4, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f5, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 1
+    },
+    "result": "(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: f0, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f1, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: f3, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: f4, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f5, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f0",
+      "new_block": "Steering Thruster",
+      "note": "Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face."
+    },
+    "result": "You have successfully added <ID 2: Steering Thruster>.\nExisting Blocks: 2\n(Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face.) <ID 2: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f1",
+      "new_block": "Steering Thruster",
+      "note": "Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face."
+    },
+    "result": "You have successfully added <ID 3: Steering Thruster>.\nExisting Blocks: 3\n(Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face.) <ID 3: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 3\n\nMachine Summary: Starting Block is the structural core. Raw geometry uses the smallest bilateral pair of fuel-free Steering Thrusters.\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face.) <ID 2: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>.\n(Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face.) <ID 3: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 2
+    },
+    "result": "(Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face.) <ID 2: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 3
+    },
+    "result": "(Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face.) <ID 3: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 3\n\nMachine Summary: Starting Block is the structural core. Raw geometry uses the smallest bilateral pair of fuel-free Steering Thrusters.\n(Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face.) <ID 2: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>.\n(Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face.) <ID 3: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>.\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]"
+  }
+]

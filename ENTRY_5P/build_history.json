@@ -1,0 +1,93 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Central Starting Block root for minimal four-actuator symmetric orbital craft."
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: f0, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f1, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: f3, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: f4, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f5, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f2",
+      "new_block": "Steering Thruster",
+      "note": "Test orientation for the repeated actuator; candidate collective and differential control element."
+    },
+    "result": "You have successfully added <ID 2: Steering Thruster>.\nExisting Blocks: 2\n(Test orientation for the repeated actuator; candidate collective and differential control element.) <ID 2: Steering Thruster>\nPosition: [0.  ,0.  ,0.75]\nOpposed RCS nozzles thrust along <South with 0.0\u00b0 pitch> and <North with -0.0\u00b0 pitch>."
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 2
+    },
+    "result": "You have successfully removed <ID 2: Steering Thruster>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f2",
+      "new_block": "Booster",
+      "note": "Primary thrust candidate; checking native thrust direction and self-contained fuel."
+    },
+    "result": "You have successfully added <ID 3: Booster>.\nExisting Blocks: 2\n(Primary thrust candidate; checking native thrust direction and self-contained fuel.) <ID 3: Booster>\nPosition: [0.,0.,1.]\nBooster exhaust points away from the mount face toward <straight up>; reaction thrust on the machine points toward <straight down>.\nAttachable Faces:\nFace label: f0, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: f1, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f3, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 3
+    },
+    "result": "You have successfully removed <ID 3: Booster>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f0",
+      "new_block": "Steering Thruster",
+      "note": "Inspect side-mounted actuator orientation for symmetric collective/differential use."
+    },
+    "result": "You have successfully added <ID 4: Steering Thruster>.\nExisting Blocks: 2\n(Inspect side-mounted actuator orientation for symmetric collective/differential use.) <ID 4: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f1",
+      "new_block": "Steering Thruster",
+      "note": "Opposite-side actuator; symmetric collective lift and differential pitch/roll."
+    },
+    "result": "You have successfully added <ID 5: Steering Thruster>.\nExisting Blocks: 3\n(Opposite-side actuator; symmetric collective lift and differential pitch/roll.) <ID 5: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f4",
+      "new_block": "Steering Thruster",
+      "note": "North-side actuator; symmetric collective lift and differential pitch/roll."
+    },
+    "result": "You have successfully added <ID 6: Steering Thruster>.\nExisting Blocks: 4\n(North-side actuator; symmetric collective lift and differential pitch/roll.) <ID 6: Steering Thruster>\nPosition: [0.  ,0.75,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f5",
+      "new_block": "Steering Thruster",
+      "note": "South-side actuator; symmetric collective lift and differential pitch/roll."
+    },
+    "result": "You have successfully added <ID 7: Steering Thruster>.\nExisting Blocks: 5\n(South-side actuator; symmetric collective lift and differential pitch/roll.) <ID 7: Steering Thruster>\nPosition: [ 0.  ,-0.75, 0.  ]\nOpposed RCS nozzles thrust along <straight down> and <straight up>."
+  }
+]

@@ -1,0 +1,6 @@
+# Keep private and packaging-only materials out of the public repository.
+PRIVATE_BACKUP_3P_141852/
+*.zip
+HUMAN_SUBMISSION_CHECKLIST.md
+SHA256SUMS.txt
+*audit*

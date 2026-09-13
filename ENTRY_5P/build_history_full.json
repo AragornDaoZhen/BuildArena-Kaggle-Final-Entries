@@ -1,0 +1,241 @@
+[
+  {
+    "op": "list_block_categories",
+    "params": {},
+    "result": "Available block categories (8):\n- Category: armour; Enabled: True; Summary: Protective and structural covering modules used to shield, reinforce, shape, or decorate a machine.\n- Category: basic; Enabled: True; Summary: General-purpose building blocks and simple connectors that form the core frame or baseline structure.\n- Category: flight; Enabled: True; Summary: Atmospheric lift and air-control modules used for planes, gliders, fans, balloons, and aerodynamic steering.\n- Category: locomotion; Enabled: True; Summary: Ground movement modules such as wheels, tracks, rolling supports, and parts that help a machine travel or steer.\n- Category: mechanical; Enabled: True; Summary: Mechanical joints, actuators, couplers, and motion-transfer modules used to articulate or transform builds.\n- Category: space-flight; Enabled: True; Summary: Rocket, fuel, and space-oriented control modules used for thrust, fuel routing, and high-energy flight systems.\n- Category: water; Enabled: True; Summary: Nautical modules for buoyancy, water propulsion, steering, sails, paddles, and marine weaponry.\n- Category: weaponry; Enabled: True; Summary: Offensive modules that damage, ignite, launch projectiles, grab targets, drill, cut, or otherwise attack."
+  },
+  {
+    "op": "list_blocks_by_category",
+    "params": {
+      "category": "space-flight"
+    },
+    "result": "Category 'space-flight' blocks (12):\n- Category: space-flight; Block: Booster; Summary: Compact fuel-burning rocket engine.\n- Category: space-flight; Block: Fuel Barrel; Summary: Small cubic fuel tank.\n- Category: space-flight; Block: Fuel Barrel Big; Summary: Large 3x3x3 fuel tank.\n- Category: space-flight; Block: Fuel Cannon; Summary: Fuel-consuming repeating fireball cannon.\n- Category: space-flight; Block: Fuel Coupler; Summary: Fuel-flow grabber coupler.\n- Category: space-flight; Block: Fuel Line; Summary: Controllable fuel-transfer connector.\n- Category: space-flight; Block: Grid Fin; Summary: Foldable grid-fin stabilizer.\n- Category: space-flight; Block: Parachute; Summary: Compact deployable parachute pack.\n- Category: space-flight; Block: Reaction Steering Block; Summary: Powered reaction-wheel attitude-control module.\n- Category: space-flight; Block: Space Wheel; Summary: Powered metal rover wheel.\n- Category: space-flight; Block: Steering Fin; Summary: Rotating trapezoid aerodynamic steering fin.\n- Category: space-flight; Block: Steering Thruster; Summary: Fuel-free paired RCS attitude thruster."
+  },
+  {
+    "op": "list_blocks_by_category",
+    "params": {
+      "category": "mechanical"
+    },
+    "result": "Category 'mechanical' blocks (12):\n- Category: mechanical; Block: Axle; Summary: Constant-velocity universal joint module.\n- Category: mechanical; Block: Ball Joint; Summary: Frictionless ball-joint foot on a 1\u00d71\u00d71 cube; no torque transfer.\n- Category: mechanical; Block: Decoupler; Summary: Decoupler.\n- Category: mechanical; Block: Grabber; Summary: Automatic grab module.\n- Category: mechanical; Block: Hinge; Summary: Passive free hinge.\n- Category: mechanical; Block: Piston; Summary: Piston module.\n- Category: mechanical; Block: Rope Winch; Summary: Connector rope winch: inextensible line between two anchors.\n- Category: mechanical; Block: Slider; Summary: Passive linear slider.\n- Category: mechanical; Block: Spinning Block; Summary: Powered rotation module.\n- Category: mechanical; Block: Spring; Summary: Spring rope (connector).\n- Category: mechanical; Block: Suspension; Summary: Suspension strut.\n- Category: mechanical; Block: Swivel; Summary: Swivel joint module."
+  },
+  {
+    "op": "list_blocks_by_category",
+    "params": {
+      "category": "flight"
+    },
+    "result": "Category 'flight' blocks (9):\n- Category: flight; Block: Ballast; Summary: Dense ballast cube for mass and balance.\n- Category: flight; Block: Balloon; Summary: Spherical lift balloon on a deployable tether.\n- Category: flight; Block: Drag Block; Summary: Air-drag bowl module.\n- Category: flight; Block: Flying Block; Summary: Flying fan module.\n- Category: flight; Block: Propeller; Summary: Aerodynamic propeller blade.\n- Category: flight; Block: Small Propeller; Summary: Compact aerodynamic propeller blade.\n- Category: flight; Block: Sqr Balloon; Summary: Hot-air cube balloon for stable hover lift.\n- Category: flight; Block: Wing; Summary: Dragon-style wing panel.\n- Category: flight; Block: Wing Panel; Summary: Pentagonal wing panel."
+  },
+  {
+    "op": "list_blocks_by_category",
+    "params": {
+      "category": "basic"
+    },
+    "result": "Category 'basic' blocks (8):\n- Category: basic; Block: Brace; Summary: Steel brace (connector).\n- Category: basic; Block: Double Wooden Block; Summary: A 1x1x2 rectangular wooden block.\n- Category: basic; Block: Log; Summary: Long wooden block (1x1x3) with extended side attachment coverage.\n- Category: basic; Block: Single Wooden Block; Summary: Single wooden cube.\n- Category: basic; Block: Starting Block; Summary: The default required base block to begin construction.\n- Category: basic; Block: Steering Hinge; Summary: Powered steering hinge.\n- Category: basic; Block: Wheel; Summary: Powered wooden wheel.\n- Category: basic; Block: Wooden Pole; Summary: Wooden pole: 1\u00d71\u00d72-style layout with ten attachable faces; lower drag than a plain wooden prism."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Starting Block"
+    },
+    "result": "Block Name: Starting Block\nDescription: A cubic block with six attachable faces."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Steering Thruster"
+    },
+    "result": "Block Name: Steering Thruster\nDescription: An RCS thruster module about 1.4 units wide, with two small side nozzles pointing in opposite directions. Each nozzle can produce thrust equivalent to about 0.4 units of mass under normal gravity. By default it automatically stabilizes the machine body, has no attachable faces, and does not consume fuel."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Booster"
+    },
+    "result": "Block Name: Booster\nDescription: A 1x1x1 rocket engine with mass 1. The four side-face centers are attachable fuel-supply connection points, and the engine can also receive fuel when mounted directly on a fuel supply. It starts with 1 unit of fuel, consumes fuel while running, and produces thrust equivalent to about 24 units of mass under normal gravity."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Fuel Barrel"
+    },
+    "result": "Block Name: Fuel Barrel\nDescription: A 1x1x1 cubic fuel tank. When full it stores 10 units of fuel by volume, has mass 0.5, and when empty has mass 0.25. It has five fuel-flow-capable attachable faces: the four side faces plus one end face. It explodes when exposed to impact or flame."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Fuel Barrel Big"
+    },
+    "result": "Block Name: Fuel Barrel Big\nDescription: A large 3x3x3 fuel tank. When full it stores 100 units of fuel by volume, has mass 5, and when empty has mass 1.5. The top and bottom end faces each have 9 fuel-flow-capable attach points: one face center, four inner points at (+/-0.5, +/-0.5) in the face plane, and four edge-center points at (+/-1.0, 0) and (0, +/-1.0). Each of the four side faces has 3 fuel-flow-capable attach points: the face center plus one point 1 unit above and one point 1 unit below the face center. It has 30 fuel-flow-capable attach points in total and is flammable and explosive under flame or impact."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Reaction Steering Block"
+    },
+    "result": "Block Name: Reaction Steering Block\nDescription: A powered metal flywheel with mass 0.25, rotation radius 0.7, and thickness 0.7. It changes mechanical attitude by generating angular momentum through wheel rotation, and by default automatically compensates for attitude instability. It has no attachable faces."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Flying Block"
+    },
+    "result": "Block Name: Flying Block\nDescription: A 1x1x1 flying fan block that produces directed lift perpendicular to the mounted face\u2014about 3.25 units of weight in gravity-equivalent thrust. It does not spin in place and has no reaction torque from rotation. Drag is relatively high in flight. Not fireproof."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Small Propeller"
+    },
+    "result": "Block Name: Small Propeller\nDescription: A thin wooden propeller blade about 2 units long, 0.4 units wide, and 0.1 units thick, with a default mount angle around 23\u00b0. In airflow it develops a large force component perpendicular to the blade."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Steering Hinge"
+    },
+    "result": "Block Name: Steering Hinge\nDescription: A 1x1x1 powered steering hinge that can actively pivot about an axis through the center of its mounted face in one degree of freedom. It has one attachable face on the free end cap."
+  },
+  {
+    "op": "get_block_description",
+    "params": {
+      "module_name": "Grid Fin"
+    },
+    "result": "Block Name: Grid Fin\nDescription: A grid fin with length 1.8, width 1.0, thickness 0.4, and mass 0.3. In its default deployed state the control surface is perpendicular to the mount base and provides aerodynamic stability in air. It can fold closed so the control surface becomes parallel to the mount face."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Central Starting Block root for minimal four-actuator symmetric orbital craft."
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: f0, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f1, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: f3, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: f4, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f5, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f2",
+      "new_block": "Steering Thruster",
+      "note": "Test orientation for the repeated actuator; candidate collective and differential control element."
+    },
+    "result": "You have successfully added <ID 2: Steering Thruster>.\nExisting Blocks: 2\n(Test orientation for the repeated actuator; candidate collective and differential control element.) <ID 2: Steering Thruster>\nPosition: [0.  ,0.  ,0.75]\nOpposed RCS nozzles thrust along <South with 0.0\u00b0 pitch> and <North with -0.0\u00b0 pitch>."
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 2
+    },
+    "result": "You have successfully removed <ID 2: Steering Thruster>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f2",
+      "new_block": "Booster",
+      "note": "Primary thrust candidate; checking native thrust direction and self-contained fuel."
+    },
+    "result": "You have successfully added <ID 3: Booster>.\nExisting Blocks: 2\n(Primary thrust candidate; checking native thrust direction and self-contained fuel.) <ID 3: Booster>\nPosition: [0.,0.,1.]\nBooster exhaust points away from the mount face toward <straight up>; reaction thrust on the machine points toward <straight down>.\nAttachable Faces:\nFace label: f0, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: f1, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f3, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 2\n\nMachine Summary: Central Starting Block root for minimal four-actuator symmetric orbital craft.\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(Primary thrust candidate; checking native thrust direction and self-contained fuel.) <ID 3: Booster>\nPosition: [0.,0.,1.]\nBooster exhaust points away from the mount face toward <straight up>; reaction thrust on the machine points toward <straight down>."
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 3
+    },
+    "result": "You have successfully removed <ID 3: Booster>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f0",
+      "new_block": "Steering Thruster",
+      "note": "Inspect side-mounted actuator orientation for symmetric collective/differential use."
+    },
+    "result": "You have successfully added <ID 4: Steering Thruster>.\nExisting Blocks: 2\n(Inspect side-mounted actuator orientation for symmetric collective/differential use.) <ID 4: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f1",
+      "new_block": "Steering Thruster",
+      "note": "Opposite-side actuator; symmetric collective lift and differential pitch/roll."
+    },
+    "result": "You have successfully added <ID 5: Steering Thruster>.\nExisting Blocks: 3\n(Opposite-side actuator; symmetric collective lift and differential pitch/roll.) <ID 5: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f4",
+      "new_block": "Steering Thruster",
+      "note": "North-side actuator; symmetric collective lift and differential pitch/roll."
+    },
+    "result": "You have successfully added <ID 6: Steering Thruster>.\nExisting Blocks: 4\n(North-side actuator; symmetric collective lift and differential pitch/roll.) <ID 6: Steering Thruster>\nPosition: [0.  ,0.75,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f5",
+      "new_block": "Steering Thruster",
+      "note": "South-side actuator; symmetric collective lift and differential pitch/roll."
+    },
+    "result": "You have successfully added <ID 7: Steering Thruster>.\nExisting Blocks: 5\n(South-side actuator; symmetric collective lift and differential pitch/roll.) <ID 7: Steering Thruster>\nPosition: [ 0.  ,-0.75, 0.  ]\nOpposed RCS nozzles thrust along <straight down> and <straight up>."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 1
+    },
+    "result": "(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: f2, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: f3, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 4
+    },
+    "result": "(Inspect side-mounted actuator orientation for symmetric collective/differential use.) <ID 4: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 5
+    },
+    "result": "(Opposite-side actuator; symmetric collective lift and differential pitch/roll.) <ID 5: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 6
+    },
+    "result": "(North-side actuator; symmetric collective lift and differential pitch/roll.) <ID 6: Steering Thruster>\nPosition: [0.  ,0.75,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 7
+    },
+    "result": "(South-side actuator; symmetric collective lift and differential pitch/roll.) <ID 7: Steering Thruster>\nPosition: [ 0.  ,-0.75, 0.  ]\nOpposed RCS nozzles thrust along <straight down> and <straight up>."
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 5\n\nMachine Summary: Central Starting Block root for minimal four-actuator symmetric orbital craft.\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(Inspect side-mounted actuator orientation for symmetric collective/differential use.) <ID 4: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>.\n(Opposite-side actuator; symmetric collective lift and differential pitch/roll.) <ID 5: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>.\n(North-side actuator; symmetric collective lift and differential pitch/roll.) <ID 6: Steering Thruster>\nPosition: [0.  ,0.75,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>.\n(South-side actuator; symmetric collective lift and differential pitch/roll.) <ID 7: Steering Thruster>\nPosition: [ 0.  ,-0.75, 0.  ]\nOpposed RCS nozzles thrust along <straight down> and <straight up>."
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Starting Block is the structural core. Raw geometry uses the smallest bilateral pair of fuel-free Steering Thrusters."
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: f0, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: f1, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: f2, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: f3, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: f4, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: f5, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f0",
+      "new_block": "Steering Thruster",
+      "note": "Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face."
+    },
+    "result": "You have successfully added <ID 2: Steering Thruster>.\nExisting Blocks: 2\n(Left member of the minimum bilateral opposed-pair layout; mounted on the Starting Block east face.) <ID 2: Steering Thruster>\nPosition: [0.75,0.  ,0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "f1",
+      "new_block": "Steering Thruster",
+      "note": "Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face."
+    },
+    "result": "You have successfully added <ID 3: Steering Thruster>.\nExisting Blocks: 3\n(Right member of the minimum bilateral opposed-pair layout; mirrored on the Starting Block west face.) <ID 3: Steering Thruster>\nPosition: [-0.75, 0.  , 0.  ]\nOpposed RCS nozzles thrust along <straight up> and <straight down>."
+  }
+]
